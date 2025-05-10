@@ -1,0 +1,43 @@
+.aircraft-section {
+    background-color: #E5E6E7;
+    width: 100%;
+    padding: 3rem 5rem;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+  }
+  
+  .aircraft-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .aircraft-category {
+    font-size: 1.85rem;
+    font-weight: bold;
+    color: #003366;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+    letter-spacing: 1px;
+  }
+  
+  .aircraft-heading {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-top: 1.5rem;       /* <- Add this line to lower the title */
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .aircraft-description {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+  

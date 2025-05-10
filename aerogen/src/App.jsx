@@ -5,6 +5,13 @@ import HeroSection from './assets/HeroSection'
 import HeroSection2 from './assets/HeroSection2'
 import Footer from './assets/Footer' 
 
+
+import AircraftHero from './assets/AircraftHero'
+
+import AircraftIntro from './assets/AircraftIntro'
+import Services from './assets/Services'
+import Services20 from './assets/Services20'
+
 function App() {
   
 
@@ -14,15 +21,16 @@ function App() {
       
       />
 
+{/*
       <HeroSection
-        backgroundImage="A321XLR.jpg"
+        backgroundImage="/A321XLR.jpg"
         title="Discover the Future of Air Travel with the Airbus A321XLR"
         subtitle="Experience unparalleled range, efficiency, and comfort on every flight with the Airbus A321XLR – the next-generation aircraft that takes your journey further"
         buttonText="EXPLORE FLEET"
       />
 
       <HeroSection2
-         backgroundImage="crew.jpg"
+         backgroundImage="/crew.jpg"
         title="Service That Takes You Higher"
         subtitle="Experience world-class hospitality and safety with every flight. Our crew is ready to make your journey seamless and unforgettable"
         buttonText="BOOK NOW"
@@ -30,21 +38,42 @@ function App() {
 
 
       <HeroSection
-         backgroundImage="fleet.jpg"
+         backgroundImage="/fleet.jpg"
         title="Explore Our Modern Fleet"
         subtitle="From short-haul efficiency to long-range luxury — discover the aircraft that fits your mission"
         buttonText="View Fleet"
       />
 
       <HeroSection2
-         backgroundImage="cabin.jpg"
+         backgroundImage= "/cabin.jpg"
         title="Step into a cabin designed for comfort and style — where every seat is first class."
         subtitle="From short-haul efficiency to long-range luxury — discover the aircraft that fits your mission"
         buttonText="BOOK NOW"
       />
 
+*/}
+
+{/*
+<AircraftIntro />
+  
+ <AircraftHero />
+
+
+ */}
+
+
+<Services
+
+backgroundImage="wing.jpg"
+
+/>
+
+<Services20 
+
+/>
+
     <Footer
-    logo="crew.jpg"
+   logo="fleet.jpg"
 />
     </>
   )

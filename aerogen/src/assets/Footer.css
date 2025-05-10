@@ -3,6 +3,8 @@
   color: #fff !important;           /* White text */
   padding: 1rem 2rem;
   text-align: center;
+  width: 100%;
+  z-index: 1000;
   }
   
   .footer-content {
