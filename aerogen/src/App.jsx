@@ -11,6 +11,8 @@ import AircraftHero from './assets/AircraftHero'
 import AircraftIntro from './assets/AircraftIntro'
 import Services from './assets/Services'
 import Services20 from './assets/Services20'
+import AuthForm from './assets/AuthForm'
+
 
 
 function App() {
