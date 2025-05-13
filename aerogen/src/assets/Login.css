@@ -1,0 +1,131 @@
+body {
+ 
+}
+
+
+
+
+
+/* Login.css */
+
+.login-container {
+ margin: 0;
+  
+  background-image: url('/wingg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+
+
+
+
+
+
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  /* Remove or adjust these background styles */
+  /* background-color: white; */
+}
+
+.login-box {
+  width: 100%;
+  max-width: 960px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.login-heading {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  color: #002f6c;
+  font-weight: bold;
+}
+
+/* Add top space for the heading */
+.login-left,
+.login-right {
+  flex: 1;
+  margin-top: 60px; /* Push content down to leave space for heading */
+}
+
+.login-left h3 {
+  font-size: 24px;
+  color: #002f6c;
+  margin-bottom: 10px;
+}
+
+.login-left p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signup-btn {
+  padding: 10px 20px;
+  border: 1px solid #002f6c;
+  background: white;
+  color: #002f6c;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #002f6c;
+  margin-bottom: 5px;
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #4cb5f9;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+.helper-links {
+  text-align: center;
+  font-size: 14px;
+}
+
+.helper-links a {
+  color: #002f6c;
+  text-decoration: none;
+  margin: 0 5px;
+}

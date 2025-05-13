@@ -1,85 +1,31 @@
 import { useState } from 'react'
-
-import NavBar from './assets/NavBar' 
-import HeroSection from './assets/HeroSection' 
-import HeroSection2 from './assets/HeroSection2'
-import Footer from './assets/Footer' 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
-import AircraftHero from './assets/AircraftHero'
-
-import AircraftIntro from './assets/AircraftIntro'
-import Services from './assets/Services'
-import Services20 from './assets/Services20'
-import AuthForm from './assets/AuthForm'
-
-
+import HomePage from './assets/HomePage';
+import Aircrafts from './assets/Aircrafts';
+import ServicesPage from './assets/ServicesPage';
+import LoginPage from './assets/Login';
+import DevelopersPage from './assets/DevelopersPage'
 
 function App() {
   
 
   return (
-    <>
-      <NavBar
-      
-      />
-
-{/*
-      <HeroSection
-        backgroundImage="/A321XLR.jpg"
-        title="Discover the Future of Air Travel with the Airbus A321XLR"
-        subtitle="Experience unparalleled range, efficiency, and comfort on every flight with the Airbus A321XLR – the next-generation aircraft that takes your journey further"
-        buttonText="EXPLORE FLEET"
-      />
-
-      <HeroSection2
-         backgroundImage="/crew.jpg"
-        title="Service That Takes You Higher"
-        subtitle="Experience world-class hospitality and safety with every flight. Our crew is ready to make your journey seamless and unforgettable"
-        buttonText="BOOK NOW"
-      />
-
-
-      <HeroSection
-         backgroundImage="/fleet.jpg"
-        title="Explore Our Modern Fleet"
-        subtitle="From short-haul efficiency to long-range luxury — discover the aircraft that fits your mission"
-        buttonText="View Fleet"
-      />
-
-      <HeroSection2
-         backgroundImage= "/cabin.jpg"
-        title="Step into a cabin designed for comfort and style — where every seat is first class."
-        subtitle="From short-haul efficiency to long-range luxury — discover the aircraft that fits your mission"
-        buttonText="BOOK NOW"
-      />
-
-*/}
-
-{/*
-<AircraftIntro />
-  
- <AircraftHero />
-
-
- */}
-
-
-<Services
-
-backgroundImage="wing.jpg"
-
-/>
-
-<Services20 
-
-/>
-
-    <Footer
-   logo="fleet.jpg"
-/>
-    </>
-  )
+     <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/HomePage" element={<HomePage />} />
+         <Route path="/Aircrafts" element={<Aircrafts />} />
+        <Route path="/ServicesPage" element={<ServicesPage />} />
+        <Route path="/DevelopersPage" element={<DevelopersPage />} />
+        <Route path="/LoginPage" element={<LoginPage />} />
+        
+        
+        
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

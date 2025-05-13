@@ -1,0 +1,56 @@
+.developers-page {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: flex-start; /* Or center, depending on vertical alignment preference */
+  align-items: center; /* Center items horizontally */
+  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+  padding: 40px 20px; /* Add some padding around the content */
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  width: 100vw; /* Make it consume the entire viewport width */
+}
+
+.developers-title {
+    margin-top:100px;
+  font-size: 2.5rem;
+  margin-bottom: 110px;
+  color: #333;
+  text-align: center;
+}
+
+.developers-container {
+    padding-top: 250rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally within the container */
+  gap: 30px;
+  padding: 0 20px; /* Add horizontal padding for spacing from the edges */
+}
+
+.developer-card {
+  background-color: white;
+  padding: 20px;
+  width: 250px; /* Or use flex-basis for more flexible sizing */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.developer-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.role {
+  font-weight: bold;
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-style: italic;
+  color: #555;
+}

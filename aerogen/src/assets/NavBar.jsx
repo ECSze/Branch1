@@ -1,4 +1,5 @@
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -8,12 +9,11 @@ function NavBar() {
           <img src="/logo.png" alt="Logo" className="logo-image" />
         </div>
         <ul className="nav-list">
-          <li className="nav-item"><a href="#" className="nav-link">Home</a></li>
-          <li className="nav-item"><a href="#" className="nav-link">Our Aircrafts</a></li>
-          <li className="nav-item"><a href="#" className="nav-link">Premium Services</a></li>
-          <li className="nav-item"><a href="#" className="nav-link">Developers</a></li>
-          <li className="nav-item"><a href="#" className="nav-link">Login</a></li>
-          
+             <li className="nav-item"><Link to="/HomePage" className="nav-link">Home</Link></li>
+          <li className="nav-item"><Link to="/Aircrafts" className="nav-link">Our Aircrafts</Link></li>
+          <li className="nav-item"><Link to="/ServicesPage" className="nav-link"> Services</Link></li>
+           <li className="nav-item"><Link to="/DevelopersPage" className="nav-link">Developers</Link></li>  
+          <li className="nav-item"><Link to="/loginPage" className="nav-link">Login</Link></li> 
         </ul>
       </div>
     </nav>
