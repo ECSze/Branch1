@@ -7,6 +7,7 @@ import Aircrafts from './assets/Aircrafts';
 import ServicesPage from './assets/ServicesPage';
 import LoginPage from './assets/Login';
 import DevelopersPage from './assets/DevelopersPage'
+import ContactPage from './assets/ContactPage';
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
         <Route path="/ServicesPage" element={<ServicesPage />} />
         <Route path="/DevelopersPage" element={<DevelopersPage />} />
         <Route path="/LoginPage" element={<LoginPage />} />
+         <Route path="/ContactPage" element={<ContactPage/>} />
         
         
         
