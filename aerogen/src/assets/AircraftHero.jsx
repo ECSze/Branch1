@@ -178,7 +178,7 @@ const AircraftHero = () => {
             <p><strong>Number of Planes Available:</strong> {aircraft.available}</p>
             <p><strong>Lease:</strong> {aircraft.lease}</p>
           </div>
-          <button className="select-button">Select Aircraft</button>
+          
         </div>
       ))}
     </div>
