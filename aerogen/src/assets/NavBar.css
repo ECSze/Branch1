@@ -11,17 +11,47 @@
 }
 
 .navbar-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo-image {
-  height: 26px;
+  max-height: 140px;
   width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+  margin-right: 4px; 
+}
+
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  font-family: 'Georgia', serif;
+}
+
+.logo-text .english {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.logo-text .japanese {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 400;
 }
 
 .nav-list {
