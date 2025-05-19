@@ -1,7 +1,7 @@
 .hero-section {
   
    position: relative;
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@
 }
 
 .hero-title3 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 1rem 0;

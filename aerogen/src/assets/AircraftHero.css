@@ -5,63 +5,62 @@
   color: #003366;
   font-weight: bold;
   margin-bottom: 2rem;
+  margin-top: 0.1rem; 
+}
+
+.aircraft-hero-container {
+  display: flex;
+  gap: 1.5rem;
+  padding: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aircraft-card {
+  background-color: #F9F6F1;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 0.75rem ;
+  text-align: center;
+  transition: transform 0.2s;
 }
 
 
+.aircraft-card:hover {
+  transform: translateY(-5px);
+}
 
-.aircraft-hero-container {
-    display: flex;
-    gap: 1.5rem;
-    padding: 5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .aircraft-card {
-    background-color: #F9F6F1;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 280px;
-    padding: 0.75rem ;
-    text-align: center;
-    transition: transform 0.2s;
-  }
-  
+.aircraft-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
 
-  .aircraft-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .aircraft-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: #222;
-  }
-  
-  .aircraft-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-  }
-  
-  .aircraft-details {
-    text-align: left;
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-    color: #444;
-  }
-  
-  .select-button {
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .select-button:hover {
-    background-color: #004fa3;
-  }
+.aircraft-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.aircraft-details {
+  text-align: left;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.select-button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.select-button:hover {
+  background-color: #004fa3;
+}

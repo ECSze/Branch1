@@ -1,38 +1,94 @@
 .contact-page {
   display: flex;
-  flex-direction: column; /* Arrange items vertically */
-  justify-content: flex-start; /* Or center, depending on vertical alignment preference */
-  align-items: center; /* Center items horizontally */
-  min-height: 100vh; /* Ensure it takes at least the full viewport height */
-  padding: 40px 20px; /* Add some padding around the content */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: auto;
+  padding-bottom: 40px;
   background-color: #f9f9f9;
   box-sizing: border-box;
-  width: 100vw; /* Make it consume the entire viewport width */
+  width: 100vw;
 }
 
-.contact-title {
-    margin-top:100px;
-  font-size: 2.5rem;
-  margin-bottom: 110px;
-  color: #333;
+.page-header {
+  width: 100%;
+  height: auto;
+  background-image: url('/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
   text-align: center;
 }
 
+.header-title {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center; /* Keep content centered */
+  align-items: flex-start;
+  max-width: 1200px; /* Keep max width */
+  width: 100%;
+  padding: 20px; /* Keep existing padding */
+  box-sizing: border-box;
+}
+
+.connect-with-us-container {
+  flex: 0 0 300px;
+  padding-right: 40px;
+  text-align: left;
+}
+
+.contact-details {
+  text-align: left;
+}
+
+.contact-details h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.contact-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
 .contact-container {
-    padding-top: 250rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the cards horizontally within the container */
+  justify-content: flex-start; /* Align items to the start */
   gap: 30px;
-  padding: 0 20px; /* Add horizontal padding for spacing from the edges */
+  flex: 1;
+  margin-top: 20px;
 }
 
 .contact-card {
   background-color: white;
   padding: 20px;
-  width: 250px; /* Or use flex-basis for more flexible sizing */
+  width: 250px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -53,4 +109,23 @@
 .message {
   font-style: italic;
   color: #555;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .connect-with-us-container {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .contact-container {
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
