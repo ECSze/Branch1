@@ -1,14 +1,13 @@
-
-import Login from './Login';
-
-import Footer from './Footer';
-import NavBar from './NavBar';
+import React from "react";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
+import Login from "./Login";
 
 function LoginPage() {
   return (
     <>
-    <NavBar/>
-     <Login />
+      <NavBar />
+      <Login />
       <Footer logo="fleet.jpg" />
     </>
   );
