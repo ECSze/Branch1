@@ -1,6 +1,6 @@
 .hero-section {
   
-   position: relative;
+  position: relative;
   height: 80vh;
   background-size: cover;
   background-position: center;
@@ -10,7 +10,7 @@
   justify-content: flex-start;
   padding-left: 7.50%;
   font-family: 'Segoe UI', sans-serif;
-  color: #fff;
+  background-color: #e4e1e1;
 }
 
 .hero-overlay3 {

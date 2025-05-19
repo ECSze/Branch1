@@ -1,5 +1,15 @@
-import React from "react";
+import {useState} from "react";
 import "./AircraftHero.css";
+
+const AircraftHero = () => {
+  const [selectedAircraft, setSelectedAircraft] = useState(null);
+  const [showBookingModal, setShowBookingModal] = useState(false);
+  const [email, setEmail] = useState("");
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [days, setDays] = useState(1);
+  const [filterField, setFilterField] = useState("name");
+  const [searchTerm, setSearchTerm] = useState("");
 
 const aircrafts = [
   {
@@ -160,29 +170,129 @@ const aircrafts = [
     available:5
   }
 ];
+const calculateTotalCost = (lease) => {
+    const pricePerDay = parseInt(lease.replace(/\D/g, "")) / 30;
+    return (pricePerDay * days).toFixed(2);
+  };
 
-const AircraftHero = () => {
+
+  const handleBookClick = (aircraft) => {
+    setSelectedAircraft(aircraft);
+    setShowBookingModal(true);
+  };
+
+
+  const handleBookingSubmit = (e) => {
+    e.preventDefault();
+    alert(`Booking confirmed for ${selectedAircraft.name}!\nTotal: $${calculateTotalCost(selectedAircraft.lease)}`);
+    setShowBookingModal(false);
+    // Reset form
+    setEmail("");
+    setDate("");
+    setTime("");
+    setDays(1);
+  };
+
+
   return (
     <div className="aircraft-hero-container">
       <h2 className="airbus-label">Our Aircrafts</h2>
+     
       {aircrafts.map((aircraft, idx) => (
-        
         <div key={idx} className="aircraft-card">
-          
           <h2 className="aircraft-title">{aircraft.name}</h2>
           <img src={aircraft.image} alt={aircraft.name} className="aircraft-image" />
           <div className="aircraft-details">
             <p><strong>Range:</strong> {aircraft.range}</p>
             <p><strong>Seats:</strong> {aircraft.seats}</p>
             <p><strong>Min Runway:</strong> {aircraft.runway}</p>
-            <p><strong>Number of Planes Available:</strong> {aircraft.available}</p>
+            <p><strong>Available:</strong> {aircraft.available}</p>
             <p><strong>Lease:</strong> {aircraft.lease}</p>
           </div>
-          
+         
+          <button
+            className="book-button"
+            onClick={() => handleBookClick(aircraft)}
+          >
+            Book Now
+          </button>
         </div>
       ))}
+
+
+      {showBookingModal && selectedAircraft && (
+        <div className="booking-modal-overlay">
+          <div className="booking-modal">
+            <button
+              className="close-modal"
+              onClick={() => setShowBookingModal(false)}
+            >
+              &times;
+            </button>
+           
+            <h2>Book {selectedAircraft.name}</h2>
+           
+            <form onSubmit={handleBookingSubmit}>
+              <div className="form-group">
+                <label>Email:</label>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
+             
+              <div className="form-group">
+                <label>Date:</label>
+                <input
+                  type="date"
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
+                  min={new Date().toISOString().split('T')[0]}
+                  required
+                />
+              </div>
+             
+              <div className="form-group">
+                <label>Time:</label>
+                <input
+                  type="time"
+                  value={time}
+                  onChange={(e) => setTime(e.target.value)}
+                  required
+                />
+              </div>
+             
+              <div className="form-group">
+                <label>Duration (days):</label>
+                <input
+                  type="number"
+                  min="1"
+                  value={days}
+                  onChange={(e) => setDays(e.target.value)}
+                  required
+                />
+              </div>
+             
+              <div className="cost-summary">
+                <h3>Cost Summary</h3>
+                <p><strong>Daily Rate:</strong> ${(parseInt(selectedAircraft.lease.replace(/\D/g, "")) / 30).toFixed(2)}</p>
+                <p><strong>Total for {days} day(s):</strong> ${calculateTotalCost(selectedAircraft.lease)}</p>
+              </div>
+             
+              <button type="submit" className="submit-booking">
+                Confirm Booking
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
+
 export default AircraftHero;
+
+

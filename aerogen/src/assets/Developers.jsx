@@ -3,27 +3,27 @@ import './Developers.css';
 
 const developers = [
   {
-    name: 'Emerson Reyes',
+    name: 'Emerson Sze',
     role: 'Frontend Developer',
-    image: '/emerson.jpg', // replace with actual image paths
+    image: 'Sze.jpg', // replace with actual image paths
     message: 'I built the UI with user experience in mind.',
   },
   {
     name: 'Shawn Franco',
     role: 'Backend Developer',
-    image: '/alex.jpg',
+    image: 'shawn.jpg',
     message: 'I developed secure and scalable APIs.',
   },
   {
-    name: 'Emerson',
+    name: 'Lex Durante',
     role: 'UI/UX Designer',
-    image: '/sarah.jpg',
+    image: 'Lex.png',
     message: 'I designed the layout and interactions.',
   },
   {
     name: 'Deseree',
     role: 'Project Manager',
-    image: '/mark.jpg',
+    image: '/Des.png',
     message: 'I ensured the team stayed on track and delivered on time.',
   },
 ];
