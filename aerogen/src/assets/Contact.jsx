@@ -6,28 +6,28 @@ import './contact.css';
 
 const contact = [
   {
-    name: 'Emerson Reyes',
+    name: 'David Sandoval',
     role: 'Head of HR',
-    image: '/emerson.jpg', // replace with actual image paths
-    message: 'email:emerson@aerogen.com',
+    image: '/david.jpg', // replace with actual image paths
+    message: 'DavidSandoval.hr@aerogen.com',
   },
   {
-    name: 'Shawn Franco',
-    role: 'Backend contact',
-    image: '/alex.jpg',
-    message: 'I contacteloped secure and scalable APIs.',
+    name: 'Freya Joe',
+    role: 'Booking Assistant',
+    image: '/sarah joe.jpg',
+    message: 'FreyaJoe.booking@aerogen.com',
   },
   {
-    name: 'Emerson',
-    role: 'UI/UX Designer',
-    image: '/sarah.jpg',
-    message: 'I designed the layout and interactions.',
+    name: 'Ashton Olviga',
+    role: 'Finance Head',
+    image: '/ashton.jpg',
+    message: 'AshtonOlviga.finance@aerogen.com',
   },
   {
-    name: 'Deseree',
-    role: 'Project Manager',
-    image: '/mark.jpg',
-    message: 'I ensured the team stayed on track and delivered on time.',
+    name: 'Allia Bonnin',
+    role: 'Marketing Head',
+    image: '/allia.jpg',
+    message: 'AlliaBonnin.marketing@aerogen.com',
   },
 ];
 
