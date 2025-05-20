@@ -11,7 +11,7 @@ const AircraftHero = () => {
   const [filterField, setFilterField] = useState("name");
   const [searchTerm, setSearchTerm] = useState("");
 
-const aircrafts = [
+  const aircrafts = [
   {
     name: "Airbus A220-100",
     image: "/A220-100.jpg",
@@ -193,14 +193,12 @@ const calculateTotalCost = (lease) => {
     setDays(1);
   };
 
-
-  return (
+   return (
     <div className="aircraft-hero-container">
       <h2 className="airbus-label">Our Aircrafts</h2>
-     
-      {aircrafts.map((aircraft, idx) => (
+       {aircrafts.map((aircraft, idx) => (
         <div key={idx} className="aircraft-card">
-          <h2 className="aircraft-title">{aircraft.name}</h2>
+            <h2 className="aircraft-title">{aircraft.name}</h2>
           <img src={aircraft.image} alt={aircraft.name} className="aircraft-image" />
           <div className="aircraft-details">
             <p><strong>Range:</strong> {aircraft.range}</p>
@@ -208,8 +206,8 @@ const calculateTotalCost = (lease) => {
             <p><strong>Min Runway:</strong> {aircraft.runway}</p>
             <p><strong>Available:</strong> {aircraft.available}</p>
             <p><strong>Lease:</strong> {aircraft.lease}</p>
-          </div>
-         
+          </div> 
+
           <button
             className="book-button"
             onClick={() => handleBookClick(aircraft)}
@@ -218,7 +216,6 @@ const calculateTotalCost = (lease) => {
           </button>
         </div>
       ))}
-
 
       {showBookingModal && selectedAircraft && (
         <div className="booking-modal-overlay">
@@ -292,7 +289,4 @@ const calculateTotalCost = (lease) => {
   );
 };
 
-
 export default AircraftHero;
-
-

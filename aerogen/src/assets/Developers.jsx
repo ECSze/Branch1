@@ -5,26 +5,26 @@ const developers = [
   {
     name: 'Emerson Sze',
     role: 'Frontend Developer',
-    image: 'Sze.jpg', // replace with actual image paths
-    message: 'I built the UI with user experience in mind.',
+    image: 'Sze.jpg', 
+    message: 'I built the UI with user experience in mind. Facilitated the Front and Back End process.',
   },
   {
     name: 'Shawn Franco',
     role: 'Backend Developer',
     image: 'shawn.jpg',
-    message: 'I developed secure and scalable APIs.',
+    message: 'I developed secure and scalable APIs. Facilitated the documentation and progress of the project.',
   },
   {
     name: 'Lex Durante',
     role: 'UI/UX Designer',
     image: 'Lex.png',
-    message: 'I designed the layout and interactions.',
+    message: 'I designed the layout and interactions. Facilitated most of Front End process.',
   },
   {
     name: 'Deseree',
     role: 'Project Manager',
     image: '/Des.png',
-    message: 'I ensured the team stayed on track and delivered on time.',
+    message: 'I ensured the team stayed on track and delivered on time. Facilitated most of the Documentation',
   },
 ];
 
