@@ -5,7 +5,7 @@
   color: #003366;
   font-weight: bold;
   margin-bottom: 2rem;
-  margin-top: 0.1rem; 
+  margin-top: 0.1rem;
 }
 
 .aircraft-hero-container {
@@ -18,15 +18,14 @@
 }
 
 .aircraft-card {
-  background-color: #F9F6F1;
+  background-color: #f9f6f1;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 280px;
-  padding: 0.75rem ;
+  padding: 0.75rem;
   text-align: center;
   transition: transform 0.2s;
 }
-
 
 .aircraft-card:hover {
   transform: translateY(-5px);
@@ -64,4 +63,96 @@
 
 .select-button:hover {
   background-color: #004fa3;
+}
+
+/* Add to your AircraftHero.css */
+.booking-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.booking-modal {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 320px; /* Smaller width */
+  max-width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.booking-modal h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #666;
+  padding: 0.2rem;
+}
+
+.form-group {
+  margin-bottom: 0.8rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.cost-summary {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.cost-summary h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cost-summary p {
+  margin: 0.3rem 0;
+}
+
+.submit-booking {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-top: 0.5rem;
 }
